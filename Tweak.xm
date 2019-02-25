@@ -17,7 +17,7 @@
     
     // you can also convert them
     if([[NSString stringWithFormat: @"%@", newDateString] isEqualToString: @"04:20"] || [[NSString stringWithFormat: @"%@", newDateString] isEqualToString: @"4:20"] || [[NSString stringWithFormat: @"%@", newDateString] isEqualToString: @"16:20"]) {
-      UIImageView *snoopImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:@"/Library/Application Support/HighDate/s.jpg"]];
+      UIImageView *snoopImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:@"/Library/Application Support/TokeTime/snoop.png"]];
       snoopImageView.frame = v.superview.bounds;
       snoopImageView.tag = 69;
       snoopImageView.contentMode = UIViewContentModeScaleAspectFill;
