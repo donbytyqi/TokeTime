@@ -1,6 +1,7 @@
 ARCHS = armv7 arm64
 TARGET = iphone:clang:latest:latest
 THEOS_BUILD_DIR = Packages
+INSTALL_TARGET_PROCESSES = SpringBoard
 
 include theos/makefiles/common.mk
 
@@ -11,6 +12,3 @@ TokeTime_FRAMEWORKS += CoreGraphics
 TokeTime_FRAMEWORKS += QuartzCore
 
 include $(THEOS_MAKE_PATH)/tweak.mk
-
-after-install::
-	install.exec "killall -9 SpringBoard"
